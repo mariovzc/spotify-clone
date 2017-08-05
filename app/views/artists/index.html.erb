@@ -5,7 +5,7 @@
         <img class="card-img-top" src="<%= a.image_url %>" alt="<%= a.name %>">
         <div class="card-block">
           <h4 class="card-title text-center"><%= a.name %></h4>
-          <%= link_to  "Ver Más", artists_albums_path(a) , class: 'btn btn-primary btn-lg btn-block'%>
+          <%= link_to  "Ver Más", artist_path(a) , class: 'btn btn-primary btn-lg btn-block'%>
         </div>
       </div>
     </div> 
