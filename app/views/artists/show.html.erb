@@ -1,2 +1,9 @@
-<h1>Artists#detail</h1>
-<p>Find me in app/views/artists/detail.html.erb</p>
+<% if @artist.albums.blank? %>
+  <div class="text-center">
+    <h1 class="header">Sin Albunes</h1> </br>
+    <p class="error">El artista Selecionado no tiene Albunes disponibles</p>
+    <%= link_to  "Volver", artists_path, class: 'btn btn-primary btn-lg' %>
+  </div>
+    
+<% else %>
+<% end %>
