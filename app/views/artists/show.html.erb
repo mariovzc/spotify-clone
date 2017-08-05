@@ -18,7 +18,7 @@
               <img class="card-img-top border-img" src="<%= a.image_url %>" alt="Card image cap">
               <div class="card-block">
                 <p class="card-text"><%= a.name %></p>
-                <p class="card-text"><%= a.released_at.year %></p>
+                <p class="card-text"><%= a.released_at.year.nil? ? '' : a.released_at.year %></p>
               </div>
             </div>
           </div>
