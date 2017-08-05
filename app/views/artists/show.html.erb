@@ -8,7 +8,7 @@
 <% else %>
 
   <div class="row">
-    <div class="col-sm-8">
+    <div class="col-sm-9">
       <h1><%= @artist.name%></h1>
       <p>Albums (<%= @artist.albums.count %>)</p>
       <div class="row">
@@ -25,8 +25,8 @@
         <%end%>
       </div>
     </div>
-    <div class="col-sm-4">
-      <img src="<%= @artist.image_url %>" class="img-fluid border-img" alt="<%= @artist.name %>">
+    <div class="col-sm-3">
+      <img src="<%= @artist.image_url %>" class="img-fluid border-img artist-image" alt="<%= @artist.name %>">
     </div>
   </div>
 

@@ -9,7 +9,7 @@ $border-color: #7f8c8d;
 }
 .card{
   width: em(360);
-  margin: em(10);
+  margin: em(30);
 }
 
 /* SHOW PAGE STYLE*/
@@ -30,7 +30,8 @@ $border-color: #7f8c8d;
   width: em(260);
   height: em(380);
 }
-.album-cards image{
+.artist-image{
+  width: auto;
 }
 .border-img{
   -webkit-box-shadow: 0px 0px 1px 1px $border-color;
