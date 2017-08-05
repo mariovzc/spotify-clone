@@ -1,0 +1,13 @@
+<div class="row">
+  <% @artists.each do |a| %>
+    <div class="col-ms-3">
+      <div class="card" >
+        <img class="card-img-top" src="<%= a.image_url %>" alt="<%= a.name %>">
+        <div class="card-block">
+          <h4 class="card-title text-center"><%= a.name %></h4>
+          <%= link_to  "Ver Más", artist_path(a) , class: 'btn btn-primary btn-lg btn-block'%>
+        </div>
+      </div>
+    </div> 
+  <% end %>    
+</div>
