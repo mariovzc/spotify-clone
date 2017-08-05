@@ -6,4 +6,29 @@
   </div>
     
 <% else %>
+
+  <div class="row">
+    <div class="col-sm-8">
+      <h1><%= @artist.name%></h1>
+      <p>Albums (<%= @artist.albums.count %>)</p>
+      <div class="row">
+        <% @artist.albums.each do |a|%>
+          <div class="col-sm-4">
+            <div class="card album-cards">
+              <img class="card-img-top border-img" src="<%= a.image_url %>" alt="Card image cap">
+              <div class="card-block">
+                <p class="card-text"><%= a.name %></p>
+                <p class="card-text"><%= a.released_at.year %></p>
+              </div>
+            </div>
+          </div>
+        <%end%>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <img src="<%= @artist.image_url %>" class="img-fluid border-img" alt="<%= @artist.name %>">
+    </div>
+  </div>
+
+
 <% end %>
